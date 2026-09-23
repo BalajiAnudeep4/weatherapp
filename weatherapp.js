@@ -21,34 +21,27 @@ document.querySelector('#myform').addEventListener('submit', (e) => {
 
         // Store API response
         let weather = info.data;
-        document.querySelector('#cityName').innerHTML =
-            weather.name + ", " + weather.sys.country;
+ document.querySelector('#cityName').innerHTML =
+    weather.name + ", " + weather.sys.country;
 
-    
-        document.querySelector('#temperature').innerHTML =
-            weather.main.temp + "°C";
+document.querySelector('#temperature').innerHTML =
+    weather.main.temp + "°C";
 
+document.querySelector('#feelsLike').innerHTML =
+    weather.main.feels_like + "°C";
 
-        document.querySelector('#description').innerHTML =
-            weather.weather[0].description;
+document.querySelector('#description').innerHTML =
+    weather.weather[0].description;
 
-        
-        document.querySelector('#feelsLike').innerHTML =
-            weather.main.feels_like;
+document.querySelector('#humidity').innerHTML =
+    weather.main.humidity + "%";
 
-        
-        document.querySelector('#humidity').innerHTML =
-            weather.main.humidity;
+document.querySelector('#pressure').innerHTML =
+    weather.main.pressure + " hPa";
 
-    
-        document.querySelector('#windSpeed').innerHTML =
-            weather.wind.speed;
-
-        
-        let iconCode = weather.weather[0].icon;
-
-        document.querySelector('#weatherIcon').src =
-            `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
+document.querySelector('#windSpeed').innerHTML =
+    weather.wind.speed + " m/s";
+       
 
     })
 

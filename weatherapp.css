@@ -22,16 +22,11 @@ body {
 .container {
     width: 400px;
     background-color: white;
-
     padding: 30px;
-
     border-radius: 15px;
-
     text-align: center;
-
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
-
 h1 {
     color: #1565c0;
     margin-bottom: 25px;
@@ -44,29 +39,19 @@ form {
 
 input {
     flex: 1;
-
     padding: 12px;
-
     border: 1px solid #ccc;
-
     border-radius: 6px;
-
     font-size: 16px;
 }
 
 button {
     padding: 12px 15px;
-
     background-color: #1565c0;
-
     color: white;
-
     border: none;
-
     border-radius: 6px;
-
     cursor: pointer;
-
     font-size: 14px;
 }
 
@@ -76,56 +61,21 @@ button:hover {
 
 .weather-card {
     margin-top: 30px;
-
     padding: 20px;
-
     background-color: #f5f9ff;
-
     border-radius: 12px;
 }
 
-#cityName {
+.weather-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.weather-row span:last-child {
     color: #1565c0;
-
-    margin-bottom: 10px;
-}
-
-#weatherIcon {
-    width: 100px;
-}
-
-#temperature {
-    font-size: 35px;
-
-    color: #333;
-
-    margin: 10px 0;
-}
-
-#description {
-    text-transform: capitalize;
-
-    color: #555;
-
-    margin-bottom: 20px;
-}
-
-.details {
-    text-align: left;
-
-    line-height: 2;
-
-    border-top: 1px solid #ddd;
-
-    padding-top: 15px;
-}
-
-.details p {
-    color: #444;
-}
-
-.details span {
     font-weight: bold;
-
-    color: #1565c0;
 }

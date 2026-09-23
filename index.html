@@ -1,7 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Weather App</title>
@@ -9,8 +12,9 @@
     <!-- Axios -->
     <script src="https://cdn.jsdelivr.net/npm/axios@1.13.0/dist/axios.min.js"></script>
 
-    
+    <!-- CSS -->
     <link rel="stylesheet" href="weatherapp.css">
+
 </head>
 
 <body>
@@ -21,9 +25,9 @@
 
         <form id="myform">
 
-            <input 
-                type="text" 
-                placeholder="Enter City" 
+            <input
+                type="text"
+                placeholder="Enter City"
                 id="city"
             >
 
@@ -31,34 +35,41 @@
 
         </form>
 
-        <!-- Weather Information -->
         <div id="weatherInfo" class="weather-card">
 
-            <h2 id="cityName">City Name</h2>
+            <div class="weather-row">
+                <span>Location</span>
+                <span id="cityName">--</span>
+            </div>
 
-            <img id="weatherIcon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOCrItgkWUCviz2Zixoc7BhZcmypynYUVE_0n0udcxtYHyNnofLuY7QqlU&s=10" width="10%" >
+            <div class="weather-row">
+                <span>Temperature</span>
+                <span id="temperature">--</span>
+            </div>
 
-            <h3 id="temperature">--°C</h3>
+            <div class="weather-row">
+                <span>Feels Like</span>
+                <span id="feelsLike">--</span>
+            </div>
 
-            <p id="description">Weather description</p>
+            <div class="weather-row">
+                <span>Description</span>
+                <span id="description">--</span>
+            </div>
 
-            <div class="details">
+            <div class="weather-row">
+                <span>Humidity</span>
+                <span id="humidity">--</span>
+            </div>
 
-                <p>
-                    🌡️ Feels Like:
-                    <span id="feelsLike">--</span>°C
-                </p>
+            <div class="weather-row">
+                <span>Pressure</span>
+                <span id="pressure">--</span>
+            </div>
 
-                <p>
-                    💧 Humidity:
-                    <span id="humidity">--</span>%
-                </p>
-
-                <p>
-                    💨 Wind Speed:
-                    <span id="windSpeed">--</span> m/s
-                </p>
-
+            <div class="weather-row">
+                <span>Wind Speed</span>
+                <span id="windSpeed">--</span>
             </div>
 
         </div>
@@ -68,4 +79,5 @@
     <script src="weatherapp.js"></script>
 
 </body>
+
 </html>
