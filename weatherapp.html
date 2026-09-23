@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App</title>
+
+    <!-- Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.13.0/dist/axios.min.js"></script>
+
+    
+    <link rel="stylesheet" href="weatherapp.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🌤️ Weather App</h1>
+
+        <form id="myform">
+
+            <input 
+                type="text" 
+                placeholder="Enter City" 
+                id="city"
+            >
+
+            <button type="submit">Get Weather</button>
+
+        </form>
+
+        <!-- Weather Information -->
+        <div id="weatherInfo" class="weather-card">
+
+            <h2 id="cityName">City Name</h2>
+
+            <img id="weatherIcon" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOCrItgkWUCviz2Zixoc7BhZcmypynYUVE_0n0udcxtYHyNnofLuY7QqlU&s=10" width="10%" >
+
+            <h3 id="temperature">--°C</h3>
+
+            <p id="description">Weather description</p>
+
+            <div class="details">
+
+                <p>
+                    🌡️ Feels Like:
+                    <span id="feelsLike">--</span>°C
+                </p>
+
+                <p>
+                    💧 Humidity:
+                    <span id="humidity">--</span>%
+                </p>
+
+                <p>
+                    💨 Wind Speed:
+                    <span id="windSpeed">--</span> m/s
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="weatherapp.js"></script>
+
+</body>
+</html>
